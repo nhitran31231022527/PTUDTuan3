@@ -6,130 +6,95 @@
 <title>Trang cá nhân – Trần Lê Uyển Nhi</title>
 
 <style>
-    body {
-        font-family: "Segoe UI", Arial, sans-serif;
-        background-color: #fdeef4;
-        margin: 0;
-        padding: 0;
-    }
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fdeef4;
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Header layout mới */
-    header {
-        background: linear-gradient(135deg, #ffb6d5, #fcd6e8);
-        padding: 40px 20px;
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
+  /* Header layout */
+  header {
+    background: linear-gradient(135deg, #ffb6d5, #fcd6e8);
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
-    header img {
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        border: 4px solid white;
-        object-fit: cover;
-        box-shadow: 0 0 10px rgba(255, 150, 180, 0.5);
-    }
+  header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(255,150,180,.5);
+  }
 
-    .info {
-        text-align: left;
-        max-width: 350px;
-        color: #5a3550;
-    }
+  .info { text-align: left; max-width: 350px; color: #5a3550; }
+  .info h1 { margin: 0 0 3px; font-size: 26px; font-weight: 700; }
+  .info p { margin: 4px 0; font-size: 16px; opacity: .85; }
+  .sub-info { font-size: 15px; margin-top: 8px; font-weight: 500; color: #7a4a60; }
 
-    .info h1 {
-        margin: 0 0 3px;
-        font-size: 26px;
-        font-weight: 700;
-    }
+  main { padding: 20px; max-width: 900px; margin: auto; }
+  h2 { color: #d65d94; margin-bottom: 12px; font-size: 22px; font-weight: 600; text-align: center; }
 
-    .info p {
-        margin: 4px 0;
-        font-size: 16px;
-        opacity: 0.85;
-    }
+  .exercise-list { list-style: none; padding-left: 0; }
 
-    .sub-info {
-        font-size: 15px;
-        margin-top: 8px;
-        font-weight: 500;
-        color: #7a4a60;
-    }
+  .exercise-list li {
+    background: #fff;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    transition: .25s;
+    overflow: hidden; /* để a block bo tròn gọn */
+  }
 
-    main {
-        padding: 20px;
-        max-width: 900px;
-        margin: auto;
-    }
+  /* cho toàn bộ thẻ li là vùng bấm */
+  .exercise-list li a {
+    display: block;
+    padding: 15px 18px;
+    text-decoration: none;
+    color: #d64f8a;
+    font-size: 18px;
+    font-weight: 600;
+  }
 
-    h2 {
-        color: #d65d94;
-        margin-bottom: 12px;
-        font-size: 22px;
-        font-weight: 600;
-        text-align: center;
-    }
+  .exercise-list li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  }
 
-    .exercise-list {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .exercise-list li {
-        background-color: white;
-        margin: 10px 0;
-        padding: 15px;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        transition: 0.25s;
-    }
-
-    .exercise-list li:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    }
-
-    .exercise-list li a {
-        text-decoration: none;
-        color: #d64f8a;
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .exercise-list li a:hover {
-        color: #ff7fb0;
-        text-decoration: underline;
-    }
+  .exercise-list li a:hover { color: #ff7fb0; text-decoration: underline; }
 </style>
 </head>
 
 <body>
 <header>
-    <!-- Avatar đã sửa đúng đường dẫn -->
-    <img src="imgs/IMG_9155.JPG" alt="Trần Lê Uyển Nhi">
+  <!-- Avatar local trong thư mục imgs (đúng hoa-thường) + phá cache ?v=1 -->
+  <img src="imgs/IMG_9155.JPG?v=1" alt="Trần Lê Uyển Nhi">
 
-    <div class="info">
-        <h1>Trần Lê Uyển Nhi</h1>
-        <p>Sinh viên UEH – Khoa Công nghệ thông tin kinh doanh (BIT)</p>
-        <p class="sub-info">Lớp: EEP002</p>
-        <p class="sub-info">MSSV: 31231022527</p>
-    </div>
+  <div class="info">
+    <h1>Trần Lê Uyển Nhi</h1>
+    <p>Sinh viên UEH – Khoa Công nghệ thông tin kinh doanh (BIT)</p>
+    <p class="sub-info">Lớp: EEP002</p>
+    <p class="sub-info">MSSV: 31231022527</p>
+  </div>
 </header>
 
 <main>
-    <h2>Danh sách bài tập</h2>
-    <ul class="exercise-list">
-        <li><a href="BaiTap2.html" target="_blank">Bài 2</a></li>
-        <li><a href="BaiTap4.html" target="_blank">Bài 4</a></li>
-        <li><a href="BaiTap5.html" target="_blank">Bài 5</a></li>
-        <li><a href="BaiTap6.html" target="_blank">Bài 6</a></li>
-        <li><a href="BaiTap7.html" target="_blank">Bài 7</a></li>
-        <li><a href="BaiTap8.html" target="_blank">Bài 8</a></li>
-        <li><a href="BaiTap9.html" target="_blank">Bài 9</a></li>
-    </ul>
+  <h2>Danh sách bài tập</h2>
+  <ul class="exercise-list">
+    <li><a href="BaiTap2.html" target="_blank" rel="noopener">Bài 2</a></li>
+    <li><a href="BaiTap4.html" target="_blank" rel="noopener">Bài 4</a></li>
+    <li><a href="BaiTap5.html" target="_blank" rel="noopener">Bài 5</a></li>
+    <li><a href="BaiTap6.html" target="_blank" rel="noopener">Bài 6</a></li>
+    <li><a href="BaiTap7.html" target="_blank" rel="noopener">Bài 7</a></li>
+    <li><a href="BaiTap8.html" target="_blank" rel="noopener">Bài 8</a></li>
+    <li><a href="BaiTap9.html" target="_blank" rel="noopener">Bài 9</a></li>
+  </ul>
 </main>
-
 </body>
 </html>
